@@ -1,0 +1,163 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "#    Scenario: As a new user i want to do the registration process, in order to become a registered user"
+          },
+          {
+            "line": 5,
+            "value": "#       Given I opened the application in browser"
+          },
+          {
+            "line": 6,
+            "value": "#       When the application got loaded"
+          },
+          {
+            "line": 7,
+            "value": "#       And I look for the register link to click"
+          },
+          {
+            "line": 8,
+            "value": "#       When I click register link, i expect to see the registration page and start filling the details"
+          },
+          {
+            "line": 9,
+            "value": "#      Then After successful registration i expect to see the home page"
+          },
+          {
+            "line": 11,
+            "value": "#    Scenario: As a not logged user, when i try to checkout it should ask me to create login"
+          },
+          {
+            "line": 12,
+            "value": "#      Given I opened the application in browser"
+          },
+          {
+            "line": 13,
+            "value": "#      When the application got loaded"
+          },
+          {
+            "line": 14,
+            "value": "#      And I searched for the Lamps in the search bar"
+          },
+          {
+            "line": 15,
+            "value": "#      When I click the Go to products button, then i expect to see the products in list view"
+          },
+          {
+            "line": 16,
+            "value": "#      And I add the first product from the list and I expect to see the view basket option"
+          },
+          {
+            "line": 17,
+            "value": "#      When I click the view basket option"
+          },
+          {
+            "line": 18,
+            "value": "#      Then I should expect to see the basket summary page"
+          },
+          {
+            "line": 19,
+            "value": "#      When I click checkout securely"
+          },
+          {
+            "line": 20,
+            "value": "#      Then I should see the login or continue as guest popup alert"
+          }
+        ],
+        "line": 22,
+        "name": "As a registered user, i can login with my credentials and search for the product",
+        "description": "",
+        "id": "this-feature-explains-the-various-scenarios-for-rscomponents;as-a-registered-user,-i-can-login-with-my-credentials-and-search-for-the-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7353538067,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I opened the application in browser",
+            "match": {
+              "location": "RegistrationStepDefs.i_opend_the_appliation_in_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 50169185,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@title\u003d\u0027Register\u0027]\"}\n  (Session info: chrome\u003d63.0.3239.132)\n  (Driver info: chromedriver\u003d2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 38 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027DESKTOP-RVT847I\u0027, ip: \u0027192.168.1.8\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir\u003dC:\\Users\\JayDK\\AppData\\Local\\Temp\\scoped_dir9160_2658}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d63.0.3239.132, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: a94c1b791a96077ac7e97cd9c48c57bb\n*** Element info: {Using\u003dxpath, value\u003d//*[@title\u003d\u0027Register\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat com.rsscomponents.config.BasePage.findElement(BasePage.java:108)\r\n\tat com.rsscomponents.pages.LandingPage.landingPageMandatoryChecks(LandingPage.java:34)\r\n\tat com.rsscomponents.stepdefs.RegistrationStepDefs.the_application_got_loaded(RegistrationStepDefs.java:26)\r\n\tat ✽.When the application got loaded(RSS-01-Register.feature:24)\r\n",
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "the application got loaded",
+            "match": {
+              "location": "RegistrationStepDefs.the_application_got_loaded()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I click the login link, i expect to see the login page",
+            "match": {
+              "location": "LoingInStepDefs.i_click_the_login_link_i_expect_to_see_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I entered valid credentials for username and password, home page should be displayed",
+            "match": {
+              "location": "LoingInStepDefs.i_entered_valid_credentials_for_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I searched for Lamps in the search bar",
+            "match": {
+              "location": "LoingInStepDefs.i_searched_for_Lamps_in_the_search_bar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I should expect to see the number of lamps available in the store.",
+            "match": {
+              "location": "LoingInStepDefs.i_should_expect_to_see_the_number_of_lamps_available_in_the_store()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This feature explains the various scenarios for Rscomponents",
+    "description": "",
+    "id": "this-feature-explains-the-various-scenarios-for-rscomponents",
+    "keyword": "Feature",
+    "uri": "RSS-01-Register.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@RSS-01"
+      }
+    ]
+  }
+]

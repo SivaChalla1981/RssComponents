@@ -1,0 +1,25 @@
+# Java
+*.class
+
+# Thumbnails
+Thumbs.db
+
+# Object files (no binaries in git repos!)
+*.obj
+*.exe
+*.so
+*.zip
+*.tar
+*.gz
+
+# IntelliJ
+.idea/
+*.iml
+
+# Maven
+target/
+cucumber-html-reports/
+
+
+
+
