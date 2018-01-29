@@ -12,4 +12,4 @@ browsers-- this is the folder where we need to provide all the browser files and
 
 Due to the less time i had developed the initial version of my vision, It will be improved very well in the next versions. 
 
-The complete scenarios are executed by basing on the shell script, 
+The complete scenarios are executed by basing on the shell script provided.
