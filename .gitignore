@@ -6,7 +6,6 @@ Thumbs.db
 
 # Object files (no binaries in git repos!)
 *.obj
-*.exe
 *.so
 *.zip
 *.tar
